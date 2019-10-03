@@ -2,9 +2,15 @@ package projetoFinal;
 
 import java.util.Random;
 
-
-public class AvaliaçãoModulo2 {
-
+/**
+*A classe seguinte faz uso dos mÃ©todos da classe CBF
+*/
+public class Avaliaï¿½ï¿½oModulo2 {
+	/**
+	* Est Ã© o mÃ©todo main que faz uso dos mÃ©todos da classe CBF.
+	*@param args Unused.
+	* @return Nothing.
+	*/
 	public static void main(String[] args) {
 		int k=3;
 		int m=1000; //mil elemntos
@@ -13,7 +19,7 @@ public class AvaliaçãoModulo2 {
 		CBF bf= new CBF(n, k);
 		int length=10; //Escolher palavras com 10 carateres
 		Random r =new Random();
-		
+
 		String maiusculas= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 		String minusculas= maiusculas.toLowerCase();
 	    String characters= maiusculas + minusculas;
@@ -21,9 +27,9 @@ public class AvaliaçãoModulo2 {
 		String texto[]= new String[1000];
 		for(int l=0; l<1000; l++) {
 	    	text=aleatoryString(r, characters, 10);
-	    	
+
 	    	texto[l]=text;
-	    	
+
 		}
 		for(int i=0; i<text.length(); i++) {
 			bf.insert(array, texto[i], k);
@@ -36,16 +42,16 @@ public class AvaliaçãoModulo2 {
 		for (int i=0; i<10000; i++) {
 			outras=aleatoryString(r, characters, 10);
 			adicionais[i]=outras;
-			
+
 		}
-		for(int i=0; i<10000;i++) { 
+		for(int i=0; i<10000;i++) {
 			System.out.println(adicionais[i]);
 			if(bf.isMember(array, adicionais[i], k)==true) {
 				fp++;
 			}
 		}
 		System.out.format("Numero de falsos positivos : % d\n", fp);;
-	
+
 
 }
 	public static String aleatoryString(Random r, String characters, int length)

@@ -5,11 +5,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+*A classe seguinte faz uso dos mÃ©todos da classe Contador
+*/
 
-public class AvaliaçãoModulo1 {
+public class Avaliaï¿½ï¿½oModulo1 {
+	/**
+	* Est Ã© o mÃ©todo main que faz uso do mÃ©todo contadorEstocastico.
+	*@param args Unused.
+	* @return Nothing.
+	*/
 	public static void main(String[] args) throws IOException {
+
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Número de contagens: ");
+		System.out.println("Nï¿½mero de contagens: ");
 		int k = sc.nextInt();
 		System.out.println("Probabilidade de sucesso: ");
 		double p = sc.nextDouble();
@@ -17,10 +26,10 @@ public class AvaliaçãoModulo1 {
 		for(int i = 0; i < k; i++) {
 			cont.contadorEstocastico();
 		}
-		System.out.printf("Número de contagens = %d\n", cont.getCouter());
+		System.out.printf("Nï¿½mero de contagens = %d\n", cont.getCouter());
 		System.out.println("-----------------------------------");
 		cont.setCounter(0);
-		File ficheiro = new File("C:\\Users\\Pedro\\eclipse-workspace\\MPEI_Project\\src\\avaliaçãoMódulos\\pg21209");
+		File ficheiro = new File("C:\\Users\\Pedro\\eclipse-workspace\\MPEI_Project\\src\\avaliaï¿½ï¿½oMï¿½dulos\\pg21209");
 		FileReader fr = new FileReader(ficheiro);
 		BufferedReader br = new BufferedReader(fr);
 		int nLines = 0;
@@ -29,10 +38,9 @@ public class AvaliaçãoModulo1 {
 			cont.contadorEstocastico();
 		}
 		System.out.printf("O ficheiro tem %d linhas\n",nLines);
-		System.out.printf("Foram contadas %d linhas pelo contador estocástico", cont.getCouter());
+		System.out.printf("Foram contadas %d linhas pelo contador estocï¿½stico", cont.getCouter());
 		br.close();
 		fr.close();
 		sc.close();
 	}
 }
-

@@ -4,12 +4,20 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-public class AvaliaçãoModulo3 {
+/**
+*A classe seguinte faz uso dos mÃ©todos das classes Contador, CBF e FindSimilar
+*/
+public class Avaliaï¿½ï¿½oModulo3 {
+	/**
+	* Est Ã© o mÃ©todo main que faz uso dos mÃ©todos das classes Contador, CBF e FindSimilar
+	*@param args Unused.
+	* @return Nothing.
+	*/
 	public static void main(String args[]) throws IOException {
 		ArrayList<ArrayList<String>> userSubs = new ArrayList<ArrayList<String>>();
 		ArrayList<String> subs = new ArrayList<String>();
 		ArrayList<String> users = new ArrayList<String>();
-		File ficheiro = new File("C:\\Users\\Pedro\\eclipse-workspace\\MPEI_Project\\src\\avaliaçãoMódulos\\txt.txt");
+		File ficheiro = new File("C:\\Users\\Pedro\\eclipse-workspace\\MPEI_Project\\src\\avaliaï¿½ï¿½oMï¿½dulos\\txt.txt");
 		FileReader fr = new FileReader(ficheiro);
 		BufferedReader br = new BufferedReader(fr);
 		String line;
@@ -35,7 +43,7 @@ public class AvaliaçãoModulo3 {
 		int[] similarArray = similar.jDistCalc();
 		for(int i = 1; i < similarArray.length; i++) {
 			if(similarArray[i] <= 0.7) {
-					System.out.printf("O utilizador %s foi adicionado à lista de recomendados!\n", users.get(i));
+					System.out.printf("O utilizador %s foi adicionado ï¿½ lista de recomendados!\n", users.get(i));
 				}
 			}
 		}
