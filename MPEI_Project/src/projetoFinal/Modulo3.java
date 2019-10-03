@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
 *A classe seguinte faz uso dos métodos das classes Contador, CBF e FindSimilar
 */
-public class Avalia��oModulo3 {
+public class Modulo3 {
 	/**
 	* Est é o método main que faz uso dos métodos das classes Contador, CBF e FindSimilar
 	*@param args Unused.

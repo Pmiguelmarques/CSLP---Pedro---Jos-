@@ -1,4 +1,5 @@
 package projetoFinal;
+
 /**
 * A classe Contador implementa um contador estocástico,
 * isto é, um contador que apenas aumenta de acordo com uma probabilidade.

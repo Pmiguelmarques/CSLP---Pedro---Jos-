@@ -1,15 +1,17 @@
 package projetoFinal;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+
 /**
 *A classe seguinte faz uso dos métodos da classe Contador
 */
 
-public class Avalia��oModulo1 {
+public class Modulo1 {
 	/**
 	* Est é o método main que faz uso do método contadorEstocastico.
 	*@param args Unused.

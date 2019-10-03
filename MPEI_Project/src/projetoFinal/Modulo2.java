@@ -5,7 +5,7 @@ import java.util.Random;
 /**
 *A classe seguinte faz uso dos métodos da classe CBF
 */
-public class Avalia��oModulo2 {
+public class Modulo2 {
 	/**
 	* Est é o método main que faz uso dos métodos da classe CBF.
 	*@param args Unused.

@@ -4,12 +4,25 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+
+/**
+*Classe que faz uso das classes CBF, FindSimilar e Contador
+*Numa aplicaÃ§Ã£o de utilizadores e subscritores
+*Uso da classe CBF para armazenar os users
+*Uso da classe FindSimilar para descobrir semelhanÃ§as entre os users
+*Uso da classe Contador para recomendar users com uma certa probabilidade
+*/
 public class SimilarUsers {
+	/**
+	* Est Ã© o mÃ©todo main que faz uso dos mÃ©todos das classes referidas acima.
+	*@param args Unused.
+	* @return Nothing.
+	*/
 	public static void main(String args[]) throws IOException {
 		ArrayList<ArrayList<String>> userSubs = new ArrayList<ArrayList<String>>();
 		ArrayList<String> subs = new ArrayList<String>();
 		ArrayList<String> users = new ArrayList<String>();
-		File ficheiro = new File("C:\\Users\\Pedro\\eclipse-workspace\\MPEI_Project\\src\\avaliaçãoMódulos\\txt.txt");
+		File ficheiro = new File("C:\\Users\\Pedro\\eclipse-workspace\\MPEI_Project\\src\\avaliaï¿½ï¿½oMï¿½dulos\\txt.txt");
 		FileReader fr = new FileReader(ficheiro);
 		BufferedReader br = new BufferedReader(fr);
 		String line;
@@ -40,7 +53,7 @@ public class SimilarUsers {
 			if(similarArray[i] <= 0.1) {
 				if(counter.contadorEstocastico() == 1) {
 					userDataBase.insert(users.get(i));
-					System.out.printf("O utilizador %s foi adicionado à lista de recomendados!\n", users.get(i));
+					System.out.printf("O utilizador %s foi adicionado ï¿½ lista de recomendados!\n", users.get(i));
 					counter.setCounter(0);
 				}
 			}
