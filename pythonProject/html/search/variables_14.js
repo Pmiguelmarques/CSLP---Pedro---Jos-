@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['ufano_7926',['ufano',['../lusiadas_8txt.html#adc01ff2e5e7d3701600089f834cae102',1,'lusiadas.txt']]],
+  ['ulcinde_7927',['Ulcinde',['../lusiadas_8txt.html#a9926817ec8453c7753ede60ae28c7956',1,'lusiadas.txt']]],
+  ['ulisses_7928',['Ulisses',['../lusiadas_8txt.html#aab390f21ce384b7eb1020b392d983642',1,'lusiadas.txt']]],
+  ['um_7929',['Um',['../lusiadas_8txt.html#a41508aa82850623def795cc7d0773167',1,'Um():&#160;lusiadas.txt'],['../lusiadas_8txt.html#afe7b705a4f19f7fc0a4771f8377be1a6',1,'um():&#160;lusiadas.txt']]],
+  ['uma_7930',['uma',['../lusiadas_8txt.html#a1e423a4479964b1b3640bc4f77d854f3',1,'lusiadas.txt']]],
+  ['umas_7931',['Umas',['../lusiadas_8txt.html#a4a22bfdef63df2d0cecc4632aa67f379',1,'lusiadas.txt']]],
+  ['undosas_7932',['undosas',['../lusiadas_8txt.html#ab5d9850d57662ac2528f25e970d2de62',1,'lusiadas.txt']]],
+  ['undívago_7933',['Undívago',['../lusiadas_8txt.html#aafbae3d2437d7d9f6efbe8ce33195bbd',1,'lusiadas.txt']]],
+  ['unidos_7934',['unidos',['../lusiadas_8txt.html#a20b5c634ac2f157c2de666043ef7da7b',1,'lusiadas.txt']]],
+  ['uniforme_7935',['Uniforme',['../lusiadas_8txt.html#a7de39c96d049b883cd721da38c474e4e',1,'lusiadas.txt']]],
+  ['universal_7936',['universal',['../lusiadas_8txt.html#a7fd8ac07b0264803c2325374611bc9ed',1,'lusiadas.txt']]],
+  ['universo_7937',['universo',['../lusiadas_8txt.html#a7511cb66c1854389895f991de7cc44d0',1,'lusiadas.txt']]],
+  ['uns_7938',['uns',['../lusiadas_8txt.html#aaa53f4ccfe428cbe88b8260f38c710dd',1,'uns():&#160;lusiadas.txt'],['../lusiadas_8txt.html#a347eba5b15ce21fc77f5f41d2b7d9d42',1,'Uns():&#160;lusiadas.txt']]],
+  ['urdia_7939',['urdia',['../lusiadas_8txt.html#a17ed677cd76ea4f069adc16b2da5e487',1,'lusiadas.txt']]],
+  ['urgente_7940',['urgente',['../lusiadas_8txt.html#a0d67edde066b1d799d876cde2018da8d',1,'lusiadas.txt']]],
+  ['ursas_7941',['Ursas',['../lusiadas_8txt.html#aa44946b1732954eb956dcd63c41b09df',1,'lusiadas.txt']]],
+  ['usa_7942',['usa',['../lusiadas_8txt.html#ac7454817e2d20e83ac52dbe2c7cb1419',1,'lusiadas.txt']]],
+  ['usada_7943',['usada',['../lusiadas_8txt.html#a0e9ce4f3ece9563e85ff04f51555d3b0',1,'lusiadas.txt']]],
+  ['usadas_7944',['usadas',['../lusiadas_8txt.html#a34b709fda3eb92ba4395992dea3beb2e',1,'lusiadas.txt']]],
+  ['usado_7945',['usado',['../lusiadas_8txt.html#a61c3ab8dbb55ad4c3122a883e739d638',1,'lusiadas.txt']]],
+  ['usados_7946',['usados',['../lusiadas_8txt.html#aedec5bfded0cb02eec5d991549a97866',1,'lusiadas.txt']]],
+  ['usavam_7947',['usavam',['../lusiadas_8txt.html#a083f43f8d3efca85bf623ffebcf82c4b',1,'lusiadas.txt']]],
+  ['uso_7948',['uso',['../lusiadas_8txt.html#a25cad6251767cd38bc56c722df557347',1,'lusiadas.txt']]],
+  ['usou_7949',['usou',['../lusiadas_8txt.html#a66823b8a2e7e10188d851d7c6a503a16',1,'lusiadas.txt']]]
+];

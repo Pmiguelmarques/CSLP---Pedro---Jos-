@@ -1,16 +1,23 @@
 # coding: utf-8
-#Made: Pedro Marques 89069 e Flávia Figueiredo 88887 
+
+##Documentation for the worker
+#
+# Details for the worker
+
 
 import string
 import logging
 import argparse
 import socket
 import pickle
-
+## @cond
 logging.basicConfig(level=logging.DEBUG,format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',datefmt='%m-%d %H:%M:%S')
 logger = logging.getLogger('worker')
 workerSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-
+##@endcond
+## This function is responsible for turning all words found in the text file into a state that can be compared with others to determine if they are the same.
+#
+# 
 def tokenizer(txt):
     tokens = txt.lower()
     tokens = tokens.translate(str.maketrans('', '', string.digits))
@@ -19,6 +26,8 @@ def tokenizer(txt):
     tokens = tokens.rstrip()
     return tokens.split()
 
+## Main function of the Worker
+# Responsible for maintaining the worker online, reducing and mapping all words it receives from the coordinator.
 def main(args):
     address = ('localhost', 5003 + args.id)
     coordinatorAddress = ('localhost', args.port)
@@ -56,6 +65,8 @@ def main(args):
                 done = True
     logger.info("Shutting Down")
 
+
+## Function reponsible for mapping sets of words that were sent by the coordinator
 def Map(string):
     wordRecord = list()                                         #Vai ser retornada uma lista de tuplos (não seria possível mapear com um dicionário pois as palavras que se repetem no texto                                                             # não seriam inseridas mais que uma vez, pois as keys não podem ser repetidas no dict)
     words = tokenizer(string)                                   #Separa em palavras
@@ -67,6 +78,7 @@ def Map(string):
         logger.info("MAP: %s -> %d", word,loggerTest.get(word))
     return wordRecord
 
+## Function responsible for reducing maps sent by the coordinator 
 def Reduce(firstList):
     reducedWordRecord = {}                                     #Vai ser retornada um dicionário em que a KEY é a palavra e o VALUE é as vezes que se repete no texto
     for list_tuple in firstList:
@@ -82,10 +94,12 @@ def Reduce(firstList):
 
     return reducedWordRecord
 
+## Function that sends data to the coordinator
 def send(address, o):
     p = pickle.dumps(o)
     workerSocket.sendto(p, address)
 
+## Function that receives data from the worker
 def recv():
         try:
             p, addr = workerSocket.recvfrom(4096)
@@ -103,5 +117,4 @@ if __name__ == '__main__':
     parser.add_argument('--port', dest='port', type=int, help='coordinator port', default=8765)
     parser.add_argument('--hostname', dest='hostname', type=str, help='coordinator hostname', default='localhost')
     args = parser.parse_args()
-    
     main(args)

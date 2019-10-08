@@ -1,6 +1,17 @@
 # coding: utf-8
-#Made: Pedro Marques 89069 e Flávia Figueiredo 88887 
 
+## \mainpage My Personal Index Page
+#
+# \section intro_sec Introduction
+#
+# This is the introduction.
+#
+# \section install_sec Installation
+#
+# \subsection step1 Step 1: Opening the box
+#  
+# etc...
+#
 import csv
 import logging
 import argparse
@@ -16,14 +27,14 @@ import threading
 logging.basicConfig(level=logging.DEBUG,format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s',datefmt='%m-%d %H:%M:%S')
 logger = logging.getLogger('coordinator')
 coordinatorSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
-datastore = [] #Guarda os blobs do texto
-hist = [] #Guarda os Maps feitos pelos workers
-wordCount = {} #Guarda as palavras do texto e todas as vezes que se repetem
-workerQueue = queue.Queue() #Queue de workers
-backUpQueue = queue.Queue() #Queue de coordenators caso o principal morra
+datastore = [] 
+hist = [] 
+wordCount = {} 
+workerQueue = queue.Queue() 
+backUpQueue = queue.Queue() 
 locale.setlocale(locale.LC_ALL,"pt_PT.UTF-8")
 
-
+## Main function, keeps the coordinator receiving messages or backing up data incase he's a backup coordinator
 def main(args):
     address = ('localhost', args.port)
     with args.file as f:
@@ -77,7 +88,7 @@ def main(args):
                 backup = False
                 logger.info("Becoming the coordinator")
                 work()
-
+##Function that makes the coordinator make a text file with the number of words counted or send workers to do manipulate data sets  
 def work():
 	backUpOn = False
 	done = False
@@ -139,7 +150,7 @@ def work():
 					send(worker, message)
 				makeFile()     
 
-
+## Function that makes the coordinator send data to the workers to be mapped
 def toMap(backupon):
 	if len(datastore) != 0:
 		addr = workerQueue.get()
@@ -156,6 +167,7 @@ def toMap(backupon):
 	else:
 		toReduce(backupon)
 
+## Function that makes the coordinator send data to the workers to be reduced
 def toReduce(backupon):
     if len(hist) != 0:
         message = hist.pop()
@@ -170,6 +182,7 @@ def toReduce(backupon):
         	send(addr, backUpMessage)
         	backUpQueue.put(backUp)
 
+##Function that makes the file with the solution
 def makeFile():
     newList = wordCount.items()
     #É criado um ficheiro csv com todas as palavras e o numero de vezes encontradas no texto lido com, ordenadas por ordem alfabetica 
@@ -182,10 +195,12 @@ def makeFile():
             csv_writer.writerow([w,wordCount[w]])
     logger.info("Shutting down")
 
+## Function that sends data to the workers
 def send(address, o):
 	p = pickle.dumps(o)
 	coordinatorSocket.sendto(p, address)
 
+## Function that receives data from the workers
 def recv():
         try:
             p, addr = coordinatorSocket.recvfrom(4096)
