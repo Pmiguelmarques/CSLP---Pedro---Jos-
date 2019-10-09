@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: projetoFinal.FindSimilar Class Reference</title>
+<title>MPEI Project (Java): projetoFinal.FindSimilar Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">MPEI Project (Java)
    </div>
+   <div id="projectbrief">Projeto relacionado com Contadores Estocásticos, Bloom Filters e MinHash, realizado para a cadeira de MPEI</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +84,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a77f7a25c282bfbc6a5c5c6af3a74502f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A classe <a class="el" href="classprojetoFinal_1_1FindSimilar.html">FindSimilar</a> permite identificar Documentos Similares através do uso de funções de hash, de shingles e da distância de Jaccard Shingles são pedaços de texto , com uma dimensão definida </p>
+<div class="textblock"><p>A classe <a class="el" href="classprojetoFinal_1_1FindSimilar.html">FindSimilar</a> permite identificar Documentos Similares através do uso de funções de hash, de shingles e da distância de Jaccard. Shingles são pedaços de texto , com uma dimensão definida. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af75027ea98eb6ba3ac5d3ff7a91b4c90"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af75027ea98eb6ba3ac5d3ff7a91b4c90">&#9670;&nbsp;</a></span>FindSimilar()</h2>
@@ -118,6 +119,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Construtor para a classe <a class="el" href="classprojetoFinal_1_1FindSimilar.html">FindSimilar</a>. Esta classe permite identificar Documentos Similares através do uso de MinHash, da similaridade de Jaccard, e da distância de Jaccard, retirando pedaços de texto dos documentos em questão (Shingles) e comparando a sua similaridade. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">doc</td><td>Documento de texto na forma de ArrayList de ArrayList. </td></tr>
+    <tr><td class="paramname">hashFunctions</td><td>Número de funções de hash. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -144,7 +152,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Função que calcula a distância de Jaccard com o uso da similaridade entre dois conjuntos </p><dl class="section return"><dt>Returns</dt><dd>jDist </dd></dl>
+<p>Função que calcula a distância de Jaccard com o uso da similaridade entre dois conjuntos. </p><dl class="section return"><dt>Returns</dt><dd>jDist Array com as distâncias de jaccard. </dd></dl>
 
 </div>
 </div>
@@ -170,6 +178,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Função que calcula a matriz de MinHash, através do uso de Shingles(pedaços de texto com o mesmo comprimento), sujeitando-os a funções de hash e guardando o mínimo na matriz de minHash.</p>
+<dl class="section return"><dt>Returns</dt><dd>minHashes Matriz com os mínimos valores de hash. </dd></dl>
 
 </div>
 </div>

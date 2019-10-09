@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: projetoFinal.CBF Class Reference</title>
+<title>MPEI Project (Java): projetoFinal.CBF Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">MPEI Project (Java)
    </div>
+   <div id="projectbrief">Projeto relacionado com Contadores Estocásticos, Bloom Filters e MinHash, realizado para a cadeira de MPEI</div>
   </td>
  </tr>
  </tbody>
@@ -87,7 +88,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aad83ee8e76277bfec6cd177f85c4ae6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A classe <a class="el" href="classprojetoFinal_1_1CBF.html">CBF</a> implementa um Counting Bloom Filter, ou seja, implementa uma estrutura de dados onde é possível adicionar elementos ao seu array, de tamanho n, dado um número de funções de hash k,. Um elemento é sujeito a k funções de hash, sendo que é calculada a posição que esse elemento irá ocupar no array, para cada função de hash, ou seja, o elemento irá ser inserido em k posições </p>
+<div class="textblock"><p>A classe <a class="el" href="classprojetoFinal_1_1CBF.html">CBF</a> implementa um Counting Bloom Filter, ou seja, implementa uma estrutura de dados onde é possível adicionar elementos ao seu array, de tamanho n, dado um número de funções de hash k. Um elemento é sujeito a k funções de hash, sendo que é calculada a posição que esse elemento irá ocupar no array, para cada função de hash, ou seja, o elemento irá ser inserido em k posições. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91b5206abbe04788bdf8b7cb181ba426"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91b5206abbe04788bdf8b7cb181ba426">&#9670;&nbsp;</a></span>CBF()</h2>
@@ -122,6 +123,13 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Construtor para um Counting Bloom Filter. Um Counting Bloom Filter permite inserir dados num array, dados esses que vão ser sujeitos a um determinado número de funções, cujo(s) valor(es) resultante(s) irão fornecer a(s) posição/posições onde irá ser inserido no array. Posteriormente , é possível determinar o número de ocorrências de um determinado dado. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Tamanho do array do Bloom Filter. </td></tr>
+    <tr><td class="paramname">k</td><td>Número de funções de hash. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -148,7 +156,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>count </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>count. </dd></dl>
 
 </div>
 </div>
@@ -191,11 +199,11 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Função que insere elementos no BloomFilter numa dada posição, incrementando nessa posição 1 O elemento é sujeito a k funções de hash, o que irá fazer com que seja incrementado 1 em k posições </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Função que insere elementos no BloomFilter numa dada posição, incrementando nessa posição 1. O elemento é sujeito a k funções de hash, o que irá fazer com que seja incrementado 1 em k posições. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">array</td><td>Este é o array onde irá ser inserido o elemento </td></tr>
-    <tr><td class="paramname">element</td><td>Este é o elemento a inserir </td></tr>
-    <tr><td class="paramname">k</td><td>Este é o número de funções hash definido </td></tr>
+    <tr><td class="paramname">array</td><td>Este é o array onde irá ser inserido o elemento. </td></tr>
+    <tr><td class="paramname">element</td><td>Este é o elemento a inserir. </td></tr>
+    <tr><td class="paramname">k</td><td>Este é o número de funções hash definido. </td></tr>
   </table>
   </dd>
 </dl>
@@ -226,9 +234,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Função que insere elementos no BloomFilter numa dada posição, incrementando nessa posição 1 O elemento é sujeito a k funções de hash, o que irá fazer com que seja incrementado 1 em k posições </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Função que insere elementos no BloomFilter numa dada posição, incrementando nessa posição 1. O elemento é sujeito a k funções de hash, o que irá fazer com que seja incrementado 1 em k posições. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">element</td><td>Este é o elemento a inserir </td></tr>
+    <tr><td class="paramname">element</td><td>Este é o elemento a inserir. </td></tr>
   </table>
   </dd>
 </dl>
@@ -274,15 +282,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Função que determina se um elemento está presente no Bloom Filter O elemento a determinar é sujeito a k funções de hash sendo que o resultado irá permitir ir verificar as posições do Array Se cada uma das posições tiver o valor 0 o elemento não está presente Se tiver o valor 1 ou maior que 1 o elemento existe no Bloom Filter </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Função que determina se um elemento está presente no Bloom Filter. O elemento a determinar é sujeito a k funções de hash sendo que o resultado irá permitir ir verificar as posições do Array. Se cada uma das posições tiver o valor 0 o elemento não está presente. Se tiver o valor 1 ou maior que 1 o elemento existe no Bloom Filter. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">array</td><td>Este é o array onde irá ser inserido o elemento </td></tr>
-    <tr><td class="paramname">element</td><td>Este é o elemento a inserir </td></tr>
-    <tr><td class="paramname">k</td><td>Este é o número de funções hash definido </td></tr>
+    <tr><td class="paramname">array</td><td>Este é o array onde irá ser inserido o elemento. </td></tr>
+    <tr><td class="paramname">element</td><td>Este é o elemento a inserir. </td></tr>
+    <tr><td class="paramname">k</td><td>Este é o número de funções hash definido. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>boolean Retorna se o elemento está presente no Bloom Filter </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code> se o elemento está presente no Bloom Filter; <code>false</code> caso contrário. </dd></dl>
 
 </div>
 </div>

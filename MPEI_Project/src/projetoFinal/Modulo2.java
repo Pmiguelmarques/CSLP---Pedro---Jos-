@@ -54,6 +54,15 @@ public class Modulo2 {
 
 
 }
+	/**
+	* Método que cria uma String aleatória dado um número random, os caractéres que irão constituir essa string e o tamanho dessa string.
+
+	*@param r Número aleatório.
+	*@param characters Alfabeto que com que a String poderá ser construída.
+	*@param length Tamanho da String pretendido.
+	*@return text Array de caractéres resultante.
+	*/
+	
 	public static String aleatoryString(Random r, String characters, int length)
 	{
 	    char[] text = new char[length];

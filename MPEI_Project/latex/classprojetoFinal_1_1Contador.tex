@@ -23,6 +23,11 @@ A classe \mbox{\hyperlink{classprojetoFinal_1_1Contador}{Contador}} implementa u
 \doxysubsubsection{\texorpdfstring{Contador()}{Contador()}}
 {\footnotesize\ttfamily projeto\+Final.\+Contador.\+Contador (\begin{DoxyParamCaption}\item[{double}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Construtor para um \mbox{\hyperlink{classprojetoFinal_1_1Contador}{Contador}} Estocástico. 
+\begin{DoxyParams}{Parameters}
+{\em p} & Probabilidade com que o \mbox{\hyperlink{classprojetoFinal_1_1Contador}{Contador}} Estocástico irá incrementar o sou counter. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -32,8 +37,8 @@ A classe \mbox{\hyperlink{classprojetoFinal_1_1Contador}{Contador}} implementa u
 \doxysubsubsection{\texorpdfstring{contadorEstocastico()}{contadorEstocastico()}}
 {\footnotesize\ttfamily int projeto\+Final.\+Contador.\+contador\+Estocastico (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Este método é usado para ver se se incrementa o valor do contador Se um random gerado for menor que p, então o contador aumenta em um \begin{DoxyReturn}{Returns}
-int Retorna o valor do contador 
+Este método é usado para ver se se incrementa o valor do contador. Se um random gerado for menor que a probabilidade p, então o contador aumenta em um. \begin{DoxyReturn}{Returns}
+int Retorna o valor do contador. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classprojetoFinal_1_1Contador_ac2bea839d13951a8eb123a7dc016f18a}\label{classprojetoFinal_1_1Contador_ac2bea839d13951a8eb123a7dc016f18a}} 
 \index{projetoFinal.Contador@{projetoFinal.Contador}!getCouter@{getCouter}}
@@ -41,8 +46,10 @@ int Retorna o valor do contador
 \doxysubsubsection{\texorpdfstring{getCouter()}{getCouter()}}
 {\footnotesize\ttfamily int projeto\+Final.\+Contador.\+get\+Couter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Retorna o valor atual do contador.
+
 \begin{DoxyReturn}{Returns}
-counter 
+counter. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classprojetoFinal_1_1Contador_abeb7c5ce950ec4c592c93f8b6040a43c}\label{classprojetoFinal_1_1Contador_abeb7c5ce950ec4c592c93f8b6040a43c}} 
 \index{projetoFinal.Contador@{projetoFinal.Contador}!setCounter@{setCounter}}
@@ -50,9 +57,11 @@ counter
 \doxysubsubsection{\texorpdfstring{setCounter()}{setCounter()}}
 {\footnotesize\ttfamily void projeto\+Final.\+Contador.\+set\+Counter (\begin{DoxyParamCaption}\item[{int}]{counter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Coloca o valor do contador no valor do inteiro passado por argumento
+
 
 \begin{DoxyParams}{Parameters}
-{\em counter} & counter to set (int value) \\
+{\em counter} & Valor que o contador irá passar a ter. \\
 \hline
 \end{DoxyParams}
 

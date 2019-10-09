@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: projetoFinal.Contador Class Reference</title>
+<title>MPEI Project (Java): projetoFinal.Contador Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">MPEI Project (Java)
    </div>
+   <div id="projectbrief">Projeto relacionado com Contadores Estocásticos, Bloom Filters e MinHash, realizado para a cadeira de MPEI</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +111,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Construtor para um <a class="el" href="classprojetoFinal_1_1Contador.html">Contador</a> Estocástico. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>Probabilidade com que o <a class="el" href="classprojetoFinal_1_1Contador.html">Contador</a> Estocástico irá incrementar o sou counter. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -136,7 +143,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Este método é usado para ver se se incrementa o valor do contador Se um random gerado for menor que p, então o contador aumenta em um </p><dl class="section return"><dt>Returns</dt><dd>int Retorna o valor do contador </dd></dl>
+<p>Este método é usado para ver se se incrementa o valor do contador. Se um random gerado for menor que a probabilidade p, então o contador aumenta em um. </p><dl class="section return"><dt>Returns</dt><dd>int Retorna o valor do contador. </dd></dl>
 
 </div>
 </div>
@@ -162,7 +169,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>counter </dd></dl>
+<p>Retorna o valor atual do contador.</p>
+<dl class="section return"><dt>Returns</dt><dd>counter. </dd></dl>
 
 </div>
 </div>
@@ -189,9 +197,10 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Coloca o valor do contador no valor do inteiro passado por argumento</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">counter</td><td>counter to set (int value) </td></tr>
+    <tr><td class="paramname">counter</td><td>Valor que o contador irá passar a ter. </td></tr>
   </table>
   </dd>
 </dl>

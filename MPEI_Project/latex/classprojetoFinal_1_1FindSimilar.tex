@@ -12,7 +12,7 @@ int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classprojetoFinal_1_1FindSimilar_a77f7a
 
 
 \doxysubsection{Detailed Description}
-A classe \mbox{\hyperlink{classprojetoFinal_1_1FindSimilar}{Find\+Similar}} permite identificar Documentos Similares através do uso de funções de hash, de shingles e da distância de Jaccard Shingles são pedaços de texto , com uma dimensão definida 
+A classe \mbox{\hyperlink{classprojetoFinal_1_1FindSimilar}{Find\+Similar}} permite identificar Documentos Similares através do uso de funções de hash, de shingles e da distância de Jaccard. Shingles são pedaços de texto , com uma dimensão definida. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classprojetoFinal_1_1FindSimilar_af75027ea98eb6ba3ac5d3ff7a91b4c90}\label{classprojetoFinal_1_1FindSimilar_af75027ea98eb6ba3ac5d3ff7a91b4c90}} 
@@ -21,6 +21,13 @@ A classe \mbox{\hyperlink{classprojetoFinal_1_1FindSimilar}{Find\+Similar}} perm
 \doxysubsubsection{\texorpdfstring{FindSimilar()}{FindSimilar()}}
 {\footnotesize\ttfamily projeto\+Final.\+Find\+Similar.\+Find\+Similar (\begin{DoxyParamCaption}\item[{Array\+List$<$ Array\+List$<$ String $>$$>$}]{doc,  }\item[{int}]{hash\+Functions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Construtor para a classe \mbox{\hyperlink{classprojetoFinal_1_1FindSimilar}{Find\+Similar}}. Esta classe permite identificar Documentos Similares através do uso de Min\+Hash, da similaridade de Jaccard, e da distância de Jaccard, retirando pedaços de texto dos documentos em questão (Shingles) e comparando a sua similaridade. 
+\begin{DoxyParams}{Parameters}
+{\em doc} & Documento de texto na forma de Array\+List de Array\+List. \\
+\hline
+{\em hash\+Functions} & Número de funções de hash. \\
+\hline
+\end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
@@ -30,8 +37,8 @@ A classe \mbox{\hyperlink{classprojetoFinal_1_1FindSimilar}{Find\+Similar}} perm
 \doxysubsubsection{\texorpdfstring{jDistCalc()}{jDistCalc()}}
 {\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} projeto\+Final.\+Find\+Similar.\+j\+Dist\+Calc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
-Função que calcula a distância de Jaccard com o uso da similaridade entre dois conjuntos \begin{DoxyReturn}{Returns}
-j\+Dist 
+Função que calcula a distância de Jaccard com o uso da similaridade entre dois conjuntos. \begin{DoxyReturn}{Returns}
+j\+Dist Array com as distâncias de jaccard. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classprojetoFinal_1_1FindSimilar_a84cd8e4bd090c13aa9a92c18bc7ac4fe}\label{classprojetoFinal_1_1FindSimilar_a84cd8e4bd090c13aa9a92c18bc7ac4fe}} 
 \index{projetoFinal.FindSimilar@{projetoFinal.FindSimilar}!minHashMatrix@{minHashMatrix}}
@@ -39,6 +46,11 @@ j\+Dist
 \doxysubsubsection{\texorpdfstring{minHashMatrix()}{minHashMatrix()}}
 {\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} projeto\+Final.\+Find\+Similar.\+min\+Hash\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
+Função que calcula a matriz de Min\+Hash, através do uso de Shingles(pedaços de texto com o mesmo comprimento), sujeitando-\/os a funções de hash e guardando o mínimo na matriz de min\+Hash.
+
+\begin{DoxyReturn}{Returns}
+min\+Hashes Matriz com os mínimos valores de hash. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
