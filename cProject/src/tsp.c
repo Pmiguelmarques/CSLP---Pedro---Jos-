@@ -25,7 +25,9 @@ static long distCalc[19];
 /**
   *
   *Função responsável por calcular a distância percorrida pelo traveling merchant
-  *
+  *@param n: número de cidades percorridas pelo caixeiro viajante 
+  *@param m: cidade inicial
+  *@param a: array com a lista de cidades a percorrer
   */
 void tsp_v1(int n,int m,int *a){
   int i,t;
@@ -81,6 +83,8 @@ void tsp_v1(int n,int m,int *a){
  * Função Main\n
  * ---->Fornece a informação à função tsp_v1 para calcular a distância percurrida\n
  * ---->Imprime os valores calculados\n
+ *@param argc: contador de argumentos ao iniciar o programa
+ *@param argv: array de argumentos usados para iniciar o programa
  */
 int main(int argc,char **argv)
 {
