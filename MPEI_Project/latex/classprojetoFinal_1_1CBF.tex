@@ -1,0 +1,91 @@
+\hypertarget{classprojetoFinal_1_1CBF}{}\doxysection{projeto\+Final.\+C\+BF Class Reference}
+\label{classprojetoFinal_1_1CBF}\index{projetoFinal.CBF@{projetoFinal.CBF}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprojetoFinal_1_1CBF_a91b5206abbe04788bdf8b7cb181ba426}{C\+BF}} (int n, int k)
+\item 
+int \mbox{\hyperlink{classprojetoFinal_1_1CBF_abf0c9f093a945bb887652af63db88352}{get\+Count}} ()
+\item 
+void \mbox{\hyperlink{classprojetoFinal_1_1CBF_a1eb1edda69286f2fb456599286778135}{insert}} (int array\mbox{[}$\,$\mbox{]}, String element, int k)
+\item 
+void \mbox{\hyperlink{classprojetoFinal_1_1CBF_a88cee021eeca75c8966a5423b65274fd}{insert}} (String element)
+\item 
+boolean \mbox{\hyperlink{classprojetoFinal_1_1CBF_aad83ee8e76277bfec6cd177f85c4ae6e}{is\+Member}} (int array\mbox{[}$\,$\mbox{]}, String element, int k)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A classe \mbox{\hyperlink{classprojetoFinal_1_1CBF}{C\+BF}} implementa um Counting Bloom Filter, ou seja, implementa uma estrutura de dados onde é possível adicionar elementos ao seu array, de tamanho n, dado um número de funções de hash k,. Um elemento é sujeito a k funções de hash, sendo que é calculada a posição que esse elemento irá ocupar no array, para cada função de hash, ou seja, o elemento irá ser inserido em k posições 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classprojetoFinal_1_1CBF_a91b5206abbe04788bdf8b7cb181ba426}\label{classprojetoFinal_1_1CBF_a91b5206abbe04788bdf8b7cb181ba426}} 
+\index{projetoFinal.CBF@{projetoFinal.CBF}!CBF@{CBF}}
+\index{CBF@{CBF}!projetoFinal.CBF@{projetoFinal.CBF}}
+\doxysubsubsection{\texorpdfstring{CBF()}{CBF()}}
+{\footnotesize\ttfamily projeto\+Final.\+C\+B\+F.\+C\+BF (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classprojetoFinal_1_1CBF_abf0c9f093a945bb887652af63db88352}\label{classprojetoFinal_1_1CBF_abf0c9f093a945bb887652af63db88352}} 
+\index{projetoFinal.CBF@{projetoFinal.CBF}!getCount@{getCount}}
+\index{getCount@{getCount}!projetoFinal.CBF@{projetoFinal.CBF}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily int projeto\+Final.\+C\+B\+F.\+get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprojetoFinal_1_1CBF_a1eb1edda69286f2fb456599286778135}\label{classprojetoFinal_1_1CBF_a1eb1edda69286f2fb456599286778135}} 
+\index{projetoFinal.CBF@{projetoFinal.CBF}!insert@{insert}}
+\index{insert@{insert}!projetoFinal.CBF@{projetoFinal.CBF}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void projeto\+Final.\+C\+B\+F.\+insert (\begin{DoxyParamCaption}\item[{int}]{array\mbox{[}$\,$\mbox{]},  }\item[{String}]{element,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Função que insere elementos no Bloom\+Filter numa dada posição, incrementando nessa posição 1 O elemento é sujeito a k funções de hash, o que irá fazer com que seja incrementado 1 em k posições 
+\begin{DoxyParams}{Parameters}
+{\em array} & Este é o array onde irá ser inserido o elemento \\
+\hline
+{\em element} & Este é o elemento a inserir \\
+\hline
+{\em k} & Este é o número de funções hash definido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classprojetoFinal_1_1CBF_a88cee021eeca75c8966a5423b65274fd}\label{classprojetoFinal_1_1CBF_a88cee021eeca75c8966a5423b65274fd}} 
+\index{projetoFinal.CBF@{projetoFinal.CBF}!insert@{insert}}
+\index{insert@{insert}!projetoFinal.CBF@{projetoFinal.CBF}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void projeto\+Final.\+C\+B\+F.\+insert (\begin{DoxyParamCaption}\item[{String}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Função que insere elementos no Bloom\+Filter numa dada posição, incrementando nessa posição 1 O elemento é sujeito a k funções de hash, o que irá fazer com que seja incrementado 1 em k posições 
+\begin{DoxyParams}{Parameters}
+{\em element} & Este é o elemento a inserir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classprojetoFinal_1_1CBF_aad83ee8e76277bfec6cd177f85c4ae6e}\label{classprojetoFinal_1_1CBF_aad83ee8e76277bfec6cd177f85c4ae6e}} 
+\index{projetoFinal.CBF@{projetoFinal.CBF}!isMember@{isMember}}
+\index{isMember@{isMember}!projetoFinal.CBF@{projetoFinal.CBF}}
+\doxysubsubsection{\texorpdfstring{isMember()}{isMember()}}
+{\footnotesize\ttfamily boolean projeto\+Final.\+C\+B\+F.\+is\+Member (\begin{DoxyParamCaption}\item[{int}]{array\mbox{[}$\,$\mbox{]},  }\item[{String}]{element,  }\item[{int}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Função que determina se um elemento está presente no Bloom Filter O elemento a determinar é sujeito a k funções de hash sendo que o resultado irá permitir ir verificar as posições do Array Se cada uma das posições tiver o valor 0 o elemento não está presente Se tiver o valor 1 ou maior que 1 o elemento existe no Bloom Filter 
+\begin{DoxyParams}{Parameters}
+{\em array} & Este é o array onde irá ser inserido o elemento \\
+\hline
+{\em element} & Este é o elemento a inserir \\
+\hline
+{\em k} & Este é o número de funções hash definido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean Retorna se o elemento está presente no Bloom Filter 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/projeto\+Final/\mbox{\hyperlink{CBF_8java}{C\+B\+F.\+java}}\end{DoxyCompactItemize}
